@@ -1,3 +1,3 @@
 # WELCOME ^^ !
-    this is my portflio website
+    this is my portfolio  website
       Hope you like it !!
