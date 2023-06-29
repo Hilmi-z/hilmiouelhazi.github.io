@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@700&display=swap');
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+header{
+    position: fixed;
+right: 0;
+top: 0;
+z-index: 1000;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+    background: transparent;
+}
+li, a {
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #000000;
+text-decoration:none;
+border-bottom: 2px solid transparent;
+
+}
+header{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 20px 10%;
+border-bottom: 2px solid transparent;
+}
+p{
+    cursor: pointer;
+    margin-right:auto;
+    font-family: "Lexend Peta";
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+    
+}
+
+
+p:hover{
+    cursor: pointer;
+    margin-right:auto;
+    font-family: "Inconsolata";
+    font-weight: 600;
+    font-size: 35px;
+    color: #7b7b7b;
+    
+}
+
+
+.nav_links {
+list-style:none;}
+
+.nav_links li {
+display: inline-block;
+padding: 0px 20px;
+}
+.nav_links li a {
+   transition:all 0.3s ease 0s; 
+}
+
+
+.nav_links li a:hover  {
+color: #7883b0;
+}
+#menu-icon{
+    color:#000000;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+
+}
+
+section{
+    padding: 0 19%;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: Linear-gradient(245.59deg, #ffffff 0%, #efefef 28.53%, #e3e3e3 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+
+
+}
+section{
+    padding: 0 19%;
+}
+
+
+.about-text h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 40px;
+    font-family: "Poppins";
+
+}
+.about-text h1{
+    
+    font-size: 35px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 20px;
+
+}
+.about-text h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    font-family: "Inconsolata";
+    margin-bottom: 10px;
+
+}
+.hilmi-img img{
+    width: 500px;
+    height: auto;
+}
+
+.about-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons{
+    position:absolute;
+    top:50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color:#000000;
+    transition: all .50s ease;
+}
+
+.icons i:hover{
+    color:#7b7b7b;
+    transform: translateY(5px);
+}
+.scroll-down{
+    position:absolute;
+    bottom:5%;
+    right:9%;
+}
+.scroll-down i{
+    display: block;
+    padding:9px;
+    font-size: 23px;
+    color:rgb(0, 0, 0);
+    background: #d0d0d0;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+@media (max-width: 1535px){
+    header{
+    padding: 15px 3%;
+    transition: .2S;
+    }
+    .icons{
+    padding: 0 3%;
+    transition: .2s;
+    }
+    .scroll-down{
+    right: 3%;
+    transition: .2s;}
+}
+
+@media (max-width: 1460px) {
+    section{
+    padding: 0 12%;
+    transition: .2s;}
+    }
+    @media (max-width: 1340px) {
+    .hilmi-img img{
+    width: 90%;
+    height: auto;}
+    .about-text h1{
+    font-size: 23px;
+    margin: 0 0 30px;}
+    .about-text h2{
+        font-size: 20px;
+        margin: 0 0 30px;}
+        .about-text h3{
+            font-size: 15px;
+            margin: 0 0 30px;}
+        }
+
+        @media (max-width: 1195px){
+            section{
+            padding: 0 3%;
+            transition: .2s;
+            }
+            .about-text{
+            padding-top: 115px;
+            }
+            .hilmi-img{
+            text-align: center;
+            }
+            .hilmi-img img{
+            width: 560px;
+            height: auto;}
+            .about{
+            height: 100%;
+            gap: 1rem;
+            grid-template-columns:1fr;}
+            .icons{
+                display: none;
+            }
+            .scroll-down{
+                display:none;
+            }
+        }
+        @media (max-width: 990px){
+            #menu-icon{
+            display: block;
+            }
+            .nav_links{
+            position: absolute;
+            top: 100%;
+            right: -100%;;
+            width: 300px;
+            height: 40vh;
+            background:#d0d0d0;
+            display: flex;
+            align-items: center;
+            flex-direction:column;
+            padding: 30px 15px;
+            transition: all .55s ease;
+            }
+            .nav_links a{
+                margin-left: 0;
+                display: block;
+                margin: 7px 0;
+            }
+            .nav_links.open{
+                right:0;
+            }
+            
+        }
+
+        @media (max-width:690px){ 
+            .hilmi-img img{
+                width: 1001;
+                height: auto;
+            }}
